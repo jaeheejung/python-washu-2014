@@ -18,3 +18,6 @@ class TestWordsCode(unittest.TestCase):
   def test_is_abecedarian(self):
     self.assertEqual(words.is_abecedarian("abcxyz"), True)
     self.assertEqual(words.is_abecedarian("abczyx"), False)
+
+if __name__ == '__main__':
+  unittest.main()	
