@@ -19,8 +19,7 @@ def reversewords(txt):
   for punctuation in existing_punctuation:
   	if punctuation in txt:
   		remember = punctuation
-  	else:
-  		pass
+  
   new_txt = txt.replace(remember,"")
   new_txt = new_txt.split()
   new_txt = ' '.join(new_txt[::-1])

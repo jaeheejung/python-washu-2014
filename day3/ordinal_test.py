@@ -5,7 +5,7 @@ class OrdinalTest(unittest.TestCase):
 
 	def setup(self): # Runs before each test to set value to be used for each test
 		pass
-	
+		
 	def test_first(self):
 		self.assertEqual("1st", ordinal.ordinal(1))
 	
@@ -24,7 +24,7 @@ class OrdinalTest(unittest.TestCase):
 	def test_twelfth(self):
 		self.assertEqual("12th", ordinal.ordinal(12))
 	
-	def test_good_string_input(self):
+	def test_string_input(self):
 		self.assertEqual("1st", ordinal.ordinal("1"))
 		self.assertEqual("Improper input", ordinal.ordinal("1 2"))
 	
@@ -37,8 +37,8 @@ class OrdinalTest(unittest.TestCase):
 	def test_decimal(self):
 		self.assertEqual("1st", ordinal.ordinal(1.0))
 	
-# 	def test_zero(self):
-# 		self.assertionEqual("0th", ordinal.ordinal(0))
+	def test_zero(self):
+		self.assertEqual("0th", ordinal.ordinal(0))
 
 if __name__ == '__main__':
 	unittest.main()
