@@ -39,7 +39,11 @@ print ev2
 
 # DataFrames are fun too 
 
+<<<<<<< HEAD
 data = pd.read_csv("http://joshcutler.github.com/PS632-Spring2013/assets/Week9/lab9.csv")
+=======
+data = pd.read_csv("https://raw.githubusercontent.com/mcdickenson/python-washu-2014/master/day9/lab9.csv")
+>>>>>>> upstream/master
 print data.head()
 data['State']
 # change column names for convenience
