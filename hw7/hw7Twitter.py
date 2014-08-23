@@ -19,9 +19,6 @@ class Follower(Base):
 	def __init__(self, follower_id, number_of_followers):
 		self.follower_id = follower_id
 		self.number_of_followers = self.number_of_followers
-		
-	def __repr__(self):
-		return "<Follower('%s', '%d')>" % (self.follower_id, self.number_of_followers)
 
 class Friend(Base):
 	__tablename__  = "friends"
@@ -33,9 +30,6 @@ class Friend(Base):
 	def __init__(self, friend_id, status_count):
 		self.friend_id = friend_id
 		self.status_count = status_count
-	
-	def __repr__(self):
-		return "<Friend('%s', '%d')>" % (self.friend_id, self.status_count)
 	
 # Create the table
 Base.metadata.create_all(engine)
